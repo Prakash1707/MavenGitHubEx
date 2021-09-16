@@ -23,6 +23,12 @@ class MyAppTest {
 		Assertions.assertEquals("hello maven", s,"failed");
 	}
 	@Test
+	void testShow2() {
+		MyApp m=new MyApp();
+		String s=m.show();
+		Assertions.assertEquals("hello maven", s,"failed");
+	}
+	@Test
 	void testAdd() {
 		int r=Calculator.add(100,200);
 		Assertions.assertEquals(300,r);
